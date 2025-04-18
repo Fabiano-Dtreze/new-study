@@ -42,6 +42,6 @@ botoes.forEach((botao, indice) => {
 }); 
 
 // OBJETIVO 2 - quando clicar no botão do personagem mostrar as informações do personagem
-//  passo 1 - pegar os personagens no JS pra poder mostrar ou esconder ele
+// passo 1 - pegar os personagens no JS pra poder mostrar ou esconder ele
 
     

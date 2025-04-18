@@ -1,16 +1,16 @@
 body {
     background-color: rgb(86, 86, 94);
-    overflow: auto;   
+    overflow: hidden;   
 }
 
 main::after {
-    content: ' ';
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
 
     min-height: 100vh;
-    width: 80vh;
+    width: 100vh;
     
 
     background: linear-gradient(92deg, #000 25%, rgba(0, 0, 0, 0) 75%) no-repeat;
@@ -18,7 +18,7 @@ main::after {
 
 main .foto {
     display: none;
-    height: 5vh;  
+    height: 100vh;  
 } 
 
 main .foto.selecionado {
@@ -26,16 +26,17 @@ main .foto.selecionado {
 }
 
 main .foto .imagem {
-    width: 10%;
-    height: 10%;
-    object-fit: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .conteudo {
    
     position: absolute;
-    top: 200px;
+    top: 0px;
     left: 180px;
+    right: 0;
 
     display: flex;
     flex-direction: column;
@@ -51,8 +52,8 @@ main .foto .imagem {
     color: #ffffff;
     font-size: 48px;
     font-family: "Secular One";
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 400;
+    margin-bottom: 28px;
 }
 
 .conteudo .descricao {
@@ -68,7 +69,7 @@ main .foto .imagem {
     position: fixed;
     top: 0;
     right: 0;
-    width: 180px;
+    width: 150px;
 
     display: flex;
     flex-direction: column;
@@ -81,8 +82,8 @@ main .foto .imagem {
 .botoes .botao {
     border: none;
     background-color: #000000;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: transform 0.3s ease;
     border-radius: 50%;
@@ -96,27 +97,27 @@ main .foto .imagem {
 
 .botoes .botao.selecionado {
     transform: scale(1.2);
-    box-shadow: 0 0 10px #d9d9d9;
+    box-shadow: 0 0 5px #d9d9d9;
 }
 
 .botoes .botao.o-palhaço {
-    box-shadow: 0 0 10px #3333ff;
+    box-shadow: 0 0 5px #3333ff;
 }
 
 .botoes .botao.street-art {
-    box-shadow: 0 0 10px #f38e0b;
+    box-shadow: 0 0 5px #f38e0b;
 }
 
 .botoes .botao.true-emotion {
-    box-shadow: 0 0 10px #ff6633;
+    box-shadow: 0 0 5px #ff6633;
 }
 
 .botoes .botao.allien-trip {
-    box-shadow: 0 0 10px #33ff44;
+    box-shadow: 0 0 5px #33ff44;
 }
 
 .botoes .botao.house-paint {
-    box-shadow: 0 0 10px #fcff33;
+    box-shadow: 0 0 5px #fcff33;
 }
 
 
